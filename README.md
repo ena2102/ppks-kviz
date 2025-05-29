@@ -1,36 +1,29 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# KvizApp
 
-## Getting Started
+## Upute za korištenje:
 
-First, run the development server:
+### 1. Namjestiti postavke za povezivanje s bazom u application.properties:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+U datoteci **application.properties**, postavite sljedeće:
+properties
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**spring.datasource.url=jdbc:vaš_url_baze**
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+**spring.datasource.username=korisnik**
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**spring.datasource.password=lozinka** 
 
-## Learn More
+### 2. Pokrenuti PpksKvizBackendApplication u PpksKvizBackendApplication.java:
+Ili iz terminala s mvn spring-boot:run **mvn spring-boot:run**
 
-To learn more about Next.js, take a look at the following resources:
+### 3. Pokrenuti frontend aplikaciju:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Otvorite terminal i pozicionirajte se u direktorij **ppks-kviz-frontend**.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Izvršite naredbu **npm install** kako biste instalirali sve potrebne pakete.
 
-## Deploy on Vercel
+Nakon završetka instalacije, pokrenite aplikaciju naredbom **npm start**.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 7. Aplikacija je spremna za korištenje:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Nakon što se frontend aplikacija uspješno pokrene, otvorite web preglednik i posjetite http://localhost:3000 kako biste pristupili aplikaciji.
